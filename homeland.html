@@ -231,6 +231,36 @@
       .hero {
         padding-top: 60px;
       }
+      .hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.homeland-banner {
+  width: 100%;
+  margin: 0 auto 35px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid #ff5a00;
+  box-shadow: 0 20px 70px rgba(0,0,0,.6);
+}
+
+.homeland-banner img {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+@media (max-width: 850px) {
+  .homeland-banner img {
+    height: 220px;
+  }
+}
     }
   </style>
 </head>
