@@ -70,3 +70,42 @@ footer{border-top:1px solid #222;padding:35px 6%;display:flex;justify-content:sp
     margin: auto;
   }
 }
+.homeland-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 25px 0;
+  max-width: 700px;
+}
+
+.homeland-feature {
+  background: #101010;
+  border: 1px solid #292929;
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.homeland-feature:hover {
+  border-color: #ff5a00;
+  transform: translateY(-3px);
+  transition: 0.2s;
+}
+
+.homeland-feature strong {
+  color: #fff;
+  font-size: 14px;
+}
+
+.homeland-feature span {
+  color: #999;
+  font-size: 13px;
+}
+
+@media (max-width: 850px) {
+  .homeland-features {
+    grid-template-columns: 1fr;
+  }
+}
